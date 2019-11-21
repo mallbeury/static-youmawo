@@ -1,6 +1,16 @@
 (function($) {
     "use strict";
 
+    function setupHandlers() {
+      $('.nav-btn.left-btn').click(function(evt){
+        $('.slider').slick('slickNext');
+      });
+
+      $('.nav-btn.right-btn').click(function(evt){
+        $('.slider').slick('slickPrev');
+      });
+    }
+
     $(document).ready(function() {
       $('.slider').slick({
         infinite: true,
@@ -137,9 +147,7 @@
 
       );
 
-
-
-
+      setupHandlers();
     });
 
 }(jQuery));
