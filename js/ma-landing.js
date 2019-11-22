@@ -3,11 +3,11 @@
 
     function setupHandlers() {
       $('.nav-btn.left-btn').click(function(evt){
-        $('.slider').slick('slickNext');
+        $('.slider').slick('slickPrev');
       });
 
       $('.nav-btn.right-btn').click(function(evt){
-        $('.slider').slick('slickPrev');
+        $('.slider').slick('slickNext');
       });
     }
 
