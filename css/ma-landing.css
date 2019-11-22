@@ -76,8 +76,12 @@ h1, h2 {
 
 /* GALLERY */
 /******************************************/
+#gallery-view {
+  padding: 15px;
+}
+
 #gallery-view .gallery figure {
-  margin: 15px;
+  margin: 15px 0;
 }
 
 #gallery-view .gallery .gallery__img {
@@ -168,6 +172,10 @@ h1, h2 {
   #works-view .features li {
     width: 50%;
     padding: 0 15px 30px 15px;
+  }
+
+  #gallery-view {
+    padding: 15px 0;
   }
 
   #gallery-view .gallery {
