@@ -18,6 +18,99 @@ h1, h2 {
   padding: 0;
 }
 
+/* HEADER */
+/******************************************/
+header {
+  background: #000;
+  color: #FFF;
+}
+
+header #header-view {
+  display: flex;
+  justify-content: space-between;
+}
+
+header #header-view .logo {
+  width: 180px;
+  padding: 10px 0;
+}
+
+header #header-view .logo img {
+  width: 100%;
+}
+
+header #header-view .nav {
+}
+
+header #header-view ul {
+  display: flex;
+  margin: 0 -15px;
+}
+
+header #header-view li {
+  padding: 0 15px;
+  line-height: 3em;
+}
+
+header #header-view li.btn-nav {
+  line-height: inherit;
+}
+
+header #header-view .nav-mini {
+  padding: 10px 10px 0 0;
+}
+
+header #header-view .nav-mini .hamburger {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  border-top: 2px solid #fff;
+}
+header #header-view .nav-mini .hamburger:before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -1px;
+  content: "";
+  width: 25px;
+  border-top: 2px solid #fff;
+}
+header #header-view .nav-mini .hamburger:after {
+  position: absolute;
+  top: 100%;
+  content: "";
+  width: 30px;
+  border-top: 2px solid #fff;
+}
+
+header #header-view .langs {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header #header-view .langs li {
+  text-transform: uppercase;
+  line-height: 2em;
+}
+
+header #header-view .langs .selected a {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #7fc9ff;
+}
+
+header #header-view a,
+header #header-view a:link,
+header #header-view a:hover,
+header #header-view a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* FOOTER */
+/******************************************/
+footer {
+}
+
 /* WELCOME */
 /******************************************/
 #welcome-view {
