@@ -18,6 +18,23 @@ h1, h2 {
   padding: 0;
 }
 
+.nopadding .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* BOOTSTRAP */
+/******************************************/
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.form-group i {
+  padding: 8px 4px 0 0;
+  font-size: 1.2em;
+}
+
 /* HEADER */
 /******************************************/
 header {
@@ -32,7 +49,7 @@ header #header-view {
 
 header #header-view .logo {
   width: 180px;
-  padding: 10px 0;
+  padding: 15px 0 0 15px;
 }
 
 header #header-view .logo img {
@@ -57,7 +74,7 @@ header #header-view li.btn-nav {
 }
 
 header #header-view .nav-mini {
-  padding: 10px 10px 0 0;
+  padding: 15px;
 }
 
 header #header-view .nav-mini .hamburger {
@@ -109,6 +126,85 @@ header #header-view a:visited {
 /* FOOTER */
 /******************************************/
 footer {
+  background: #000;
+  color: #FFF;
+}
+
+footer #footer-view {
+  padding: 0 15px;
+}
+
+footer #footer-view .logo {
+  width: 180px;
+}
+
+footer #footer-view .logo img {
+  width: 100%;
+}
+
+footer #footer-view .newsletter {
+  margin: 15px 0;
+}
+
+footer #footer-view .newsletter .form-group {
+  max-width: 240px;
+}
+
+footer #footer-view .newsletter input {
+  background: #222;
+  border: none;
+}
+
+footer #footer-view .menus {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer #footer-view .nav {
+  width: 100%;
+}
+
+footer #footer-view ul {
+  padding: 15px 0;
+}
+
+footer #footer-view .nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer #footer-view li {
+  padding: 5px 0;
+}
+
+footer #footer-view .nav li {
+  width: 50%;
+}
+
+footer #footer-view .nav-sup {
+  width: 50%;
+}
+
+footer #footer-view .social {
+  width: 50%;
+}
+
+footer #footer-view .social i {
+  width: 20px;
+}
+
+footer #footer-view .boilerplate {
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer #footer-view .boilerplate ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer #footer-view .boilerplate li {
+  padding: 0 15px;
 }
 
 /* WELCOME */
@@ -125,7 +221,7 @@ footer {
 /* INDUSTRY */
 /******************************************/
 #industry-view {
-  padding: 15px;
+  padding: 15px 0;
   background-color: #000;
   color: #FFF;
 }
@@ -241,14 +337,84 @@ footer {
 }
 
 #quotes-view li {
+  padding: 30px 15px;
+}
+
+/* ABOUT */
+/******************************************/
+#about-view {
+  background: #000;
+  color: #FFF;
+  padding: 15px;
+}
+
+#about-view ul {
+}
+
+#about-view li {
   padding: 15px 0;
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+}
+
+#about-view li:last-child {
+  border: none;
+}
+
+#about-view li p {
+  margin: 15px 0;
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  header #header-view .logo {
+    padding-left: 0;
+  }
+
+  footer #footer-view {
+    padding: 0;
+  }
+
+  footer #footer-view ul {
+    padding: 0;
+  }
+
+  footer #footer-view .content {
+    display: flex;
+  }
+
+  footer #footer-view .content .logo-newsletter {
+    width: 40%;
+  }
+
+  footer #footer-view .content .menus {
+    width: 60%;
+  }
+
+  footer #footer-view .content .menus .nav {
+    width: 50%;
+  }
+
+  footer #footer-view .content .menus .nav-sup {
+    width: 25%;
+  }
+
+  footer #footer-view .content .menus .social {
+    width: 25%;
+  }
+
+  footer #footer-view .boilerplate {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  footer #footer-view .boilerplate ul {
+    justify-content: flex-end;
+  }
+
   #industry-view {
     display: flex;
-    flex-wrap: wrap;  
   }
 
   #industry-view .experts {
@@ -364,9 +530,6 @@ footer {
     justify-content: space-between;
   }
 
-  #press-view .intro .cta {
-  }
-
   #press-view ul {
     display: flex;
     margin: 0 -15px;
@@ -377,7 +540,21 @@ footer {
   }
 
   #quotes-view {
-    padding: 0;
+    padding: 15px 0;
+  }
+
+  #about-view {
+    padding: 30px 0;
+  }
+
+  #about-view ul {
+    display: flex;
+  }
+
+  #about-view li {
+    padding: 0 30px;
+    border-bottom: none;
+    border-right: 1px solid #CCC;
   }
 }
 
