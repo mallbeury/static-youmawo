@@ -272,12 +272,29 @@ footer #footer-view .boilerplate li {
   text-align: center;
 }
 
+/* COLLECTIONS */
+/******************************************/
+#collections-view {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+#collections-view h1 {
+  font-size: 3em;
+  padding: 15px 0;
+}
+
 /* WORKS */
 /******************************************/
 #works-view {
   display: flex;
   flex-wrap: wrap;  
   margin: 15px 15px;
+}
+
+#works-view h1 {
+  padding: 15px 0;
+  font-size: 2em;
 }
 
 #works-view .features {
@@ -292,6 +309,34 @@ footer #footer-view .boilerplate li {
 
 #works-view .features li {
   padding: 0 0 30px 0;
+}
+
+#works-view li h1 {
+  padding: 5px 0;
+  font-size: 1em;
+}
+
+#works-view .cta {
+  padding: 15px 0;
+}
+
+/* HOW */
+/******************************************/
+#how-view {
+  padding: 30px 0;
+  background: #000;
+  color: #FFF;
+  text-align: center;
+}
+
+#how-view h1 {
+  font-size: 3em;
+  padding: 5px 0;
+}
+
+#how-view h2 {
+  font-size: 1.4em;
+  padding: 15px 0;
 }
 
 /* GALLERY */
@@ -451,7 +496,7 @@ footer #footer-view .boilerplate li {
   #welcome-view .titles h1 {
     font-size: 4em;
   }
-  
+
   #welcome-view .titles h1,
   #welcome-view .titles h2 {
     width: 50%;
@@ -481,6 +526,10 @@ footer #footer-view .boilerplate li {
     padding: 0 30px;
   }
 
+  #collections-view {
+    padding: 60px 0;
+  }
+
   #works-view {
     margin: 15px 0;
   }
@@ -502,7 +551,11 @@ footer #footer-view .boilerplate li {
     padding: 0 15px 30px 15px;
   }
 
-  #gallery-view {
+  #how-view {
+    padding: 60px 0;
+  }
+  
+  gallery-view {
     padding: 15px 0;
   }
 
