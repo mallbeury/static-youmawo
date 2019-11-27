@@ -47,6 +47,8 @@ a.more {
 .form-control {
   box-shadow: none;
   border-radius: 0;
+  padding: 6px 16px;
+  color: #FFF;
 }
 
 .form-group i {
@@ -153,7 +155,8 @@ header #header-view .langs li {
   line-height: 2em;
 }
 
-header #header-view .langs .selected a {
+header #header-view .langs .selected a,
+header #header-view .langs a:hover {
   padding-bottom: 4px;
   border-bottom: 2px solid #7fc9ff;
 }
@@ -219,7 +222,7 @@ footer #footer-view .nav ul {
 }
 
 footer #footer-view li {
-  padding: 12px 0;
+  padding: 8px 0;
   opacity: 0.92;
 }
 
@@ -236,7 +239,7 @@ footer #footer-view .social {
 }
 
 footer #footer-view .social i {
-  font-size: 1.4em;
+  font-size: 1.2em;
   width: 30px;
 }
 
@@ -634,7 +637,10 @@ footer #footer-view .boilerplate li {
 @media (min-width: 768px) {
   header #header-view .logo {
     padding-left: 0;
-    width: auto;
+  }
+
+  header #header-view .nav-mini {
+    padding-right: 0;
   }
 
   footer #footer-view {
@@ -651,6 +657,10 @@ footer #footer-view .boilerplate li {
 
   footer #footer-view .content .logo-newsletter {
     width: 40%;
+  }
+
+  footer #footer-view .newsletter p {
+    padding: 5px 0 25px 0;
   }
 
   footer #footer-view .content .menus {
@@ -670,6 +680,7 @@ footer #footer-view .boilerplate li {
   }
 
   footer #footer-view .boilerplate {
+    padding: 70px 0 30px 0;
     display: flex;
     justify-content: space-between;
     text-align: left;
@@ -711,6 +722,7 @@ footer #footer-view .boilerplate li {
   }
 
   #industry-view .experts {
+    padding-top: 22px;
     width: 14%;
     text-align: left;
   }
@@ -865,6 +877,7 @@ footer #footer-view .boilerplate li {
   }
 
   #press-view li {
+    width: 33.3333%;
     padding: 0 15px;
   }
 
@@ -888,10 +901,11 @@ footer #footer-view .boilerplate li {
 
   #about-view ul {
     display: flex;
+    padding: 40px 0 100px 0;
   }
 
   #about-view li {
-    padding: 0 30px;
+    padding: 0 50px;
     border-bottom: none;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
   }
@@ -899,6 +913,11 @@ footer #footer-view .boilerplate li {
 
 /* Small devices (tablets, 992px and up) */
 @media (min-width: 992px) {
+  header #header-view .logo {
+    padding-left: 0;
+    width: auto;
+  }
+
   #quotes-view p {
     min-height: 240px;
   }
