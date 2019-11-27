@@ -1,4 +1,5 @@
 html, body {
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
 }
 
@@ -23,6 +24,22 @@ h1, h2 {
   margin-right: 0;
 }
 
+.highlight {
+  font-size: 1.15em;
+  color: #B2B5D0;
+}
+
+a,
+a:link,
+a:hover,
+a:visited {
+  color: inherit;
+}
+
+a.browse {
+  color: #7ABBEB;
+}
+
 /* BOOTSTRAP */
 /******************************************/
 .form-control {
@@ -33,6 +50,17 @@ h1, h2 {
 .form-group i {
   padding: 8px 4px 0 0;
   font-size: 1.2em;
+}
+
+.btn,
+a.btn {
+  padding: 15px 30px;
+  background: #7ABBEB;
+  color: #FFF;
+}
+
+.btn:hover {
+  background: #6DB7ED;
 }
 
 /* HEADER */
@@ -48,7 +76,7 @@ header #header-view {
 }
 
 header #header-view .logo {
-  width: 180px;
+  width: 172px;
   padding: 15px 0 0 15px;
 }
 
@@ -65,12 +93,19 @@ header #header-view ul {
 }
 
 header #header-view li {
-  padding: 0 15px;
-  line-height: 3em;
+  padding: 15px 15px 0 15px;
+  line-height: 2.8em;
 }
 
 header #header-view li.btn-nav {
+  padding: 0 15px;
   line-height: inherit;
+}
+
+header #header-view .btn {
+  padding: 22px 44px;
+  background: #1f222b;
+  color: #FFF;
 }
 
 header #header-view .nav-mini {
@@ -79,9 +114,10 @@ header #header-view .nav-mini {
 
 header #header-view .nav-mini .hamburger {
   position: relative;
-  width: 30px;
-  height: 20px;
-  border-top: 2px solid #fff;
+  top: 6px;
+  width: 24px;
+  height: 16px;
+  border-top: 2px solid #DFE6EE;
 }
 header #header-view .nav-mini .hamburger:before {
   position: absolute;
@@ -89,15 +125,15 @@ header #header-view .nav-mini .hamburger:before {
   right: 0;
   margin-top: -1px;
   content: "";
-  width: 25px;
-  border-top: 2px solid #fff;
+  width: 20px;
+  border-top: 2px solid #DFE6EE;
 }
 header #header-view .nav-mini .hamburger:after {
   position: absolute;
   top: 100%;
   content: "";
-  width: 30px;
-  border-top: 2px solid #fff;
+  width: 24px;
+  border-top: 2px solid #DFE6EE;
 }
 
 header #header-view .langs {
@@ -106,20 +142,20 @@ header #header-view .langs {
 }
 
 header #header-view .langs li {
+  padding: 5px 15px 0 0;
   text-transform: uppercase;
   line-height: 2em;
 }
 
 header #header-view .langs .selected a {
   padding-bottom: 4px;
-  border-bottom: 1px solid #7fc9ff;
+  border-bottom: 2px solid #7fc9ff;
 }
 
-header #header-view a,
-header #header-view a:link,
-header #header-view a:hover,
-header #header-view a:visited {
-  color: inherit;
+header #header-view .langs a,
+header #header-view .langs a:link,
+header #header-view .langs a:hover,
+header #header-view .langs a:visited {
   text-decoration: none;
 }
 
@@ -217,7 +253,7 @@ footer #footer-view .boilerplate li {
 
 #welcome-view .content {
   position: relative;
-  height: 400px;
+  height: 600px;
 }
 
 #welcome-view #particles-js {
@@ -241,24 +277,35 @@ footer #footer-view .boilerplate li {
 }
 
 #welcome-view .titles h2 {
-  font-size: 1.4em;
+  font-size: 1.3em;
+  line-height: 1.4em;
   padding: 15px 0 15px 0;
 }
 
-#welcome-view .titles .cta {
+#welcome-view .titles .actions {
   padding: 30px 0;
+}
+
+#welcome-view .titles .link {
+  padding-top: 40px;
 }
 
 /* INDUSTRY */
 /******************************************/
 #industry-view {
-  padding: 15px 0;
+  padding: 30px 0;
   background-color: #000;
   color: #FFF;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #industry-view .experts {
   text-align: center;
+}
+
+#industry-view .logos {
+  opacity: 0.2;
+  padding: 20px 0;
 }
 
 #industry-view ul {
@@ -275,12 +322,17 @@ footer #footer-view .boilerplate li {
 /* COLLECTIONS */
 /******************************************/
 #collections-view {
-  padding: 30px 15px;
+  padding: 150px 15px 200px 15px;
   text-align: center;
+  background-image: url("../images/Sherwood-front-01.png");
+  background-repeat: no-repeat;
+  background-size: auto 246px;
+  background-position: center bottom;
 }
 
 #collections-view h1 {
-  font-size: 3em;
+  font-size: 2.9em;
+  line-height: 1.3em;
   padding: 15px 0;
 }
 
@@ -289,12 +341,13 @@ footer #footer-view .boilerplate li {
 #works-view {
   display: flex;
   flex-wrap: wrap;  
-  margin: 15px 15px;
+  margin: 100px 15px;
 }
 
 #works-view h1 {
   padding: 15px 0;
-  font-size: 2em;
+  font-size: 2.3em;
+  line-height: 1.1em;
 }
 
 #works-view .features {
@@ -317,7 +370,7 @@ footer #footer-view .boilerplate li {
 }
 
 #works-view .cta {
-  padding: 15px 0;
+  padding: 25px 0;
 }
 
 /* HOW */
@@ -359,8 +412,13 @@ footer #footer-view .boilerplate li {
   padding: 15px;
 }
 
+#press-view h1 {
+  padding: 5px 0;
+  font-size: 2.3em;
+  line-height: 1.1em;
+}
+
 #press-view .intro {
-  padding: 15px 0;
 }
 
 #press-view ul {
@@ -430,7 +488,7 @@ footer #footer-view .boilerplate li {
 #about-view li {
   padding: 15px 0;
   text-align: center;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #about-view li:last-child {
@@ -445,6 +503,7 @@ footer #footer-view .boilerplate li {
 @media (min-width: 768px) {
   header #header-view .logo {
     padding-left: 0;
+    width: auto;
   }
 
   footer #footer-view {
@@ -489,6 +548,10 @@ footer #footer-view .boilerplate li {
     justify-content: flex-end;
   }
 
+  #welcome-view .content {
+    height: 650px;
+  }
+
   #welcome-view .titles {
     padding: 0;
   }
@@ -502,6 +565,16 @@ footer #footer-view .boilerplate li {
     width: 50%;
   }
 
+  #welcome-view .titles .actions {
+    display: flex;
+    align-items: center;
+  }
+
+  #welcome-view .titles .link {
+    padding-top: 0;
+    padding-left: 30px;
+  }
+
   #industry-view {
     display: flex;
   }
@@ -513,6 +586,7 @@ footer #footer-view .boilerplate li {
 
   #industry-view .logos {
     width: 86%;
+    opacity: 1;
   }
 
   #industry-view ul {
@@ -527,15 +601,25 @@ footer #footer-view .boilerplate li {
   }
 
   #collections-view {
-    padding: 60px 0;
+    padding: 200px 15px 320px 15px;
+    background-size: auto 420px;
+  }
+
+  #collections-view h1 {
+    font-size: 4em;
   }
 
   #works-view {
     margin: 15px 0;
   }
 
+  #works-view h1 {
+    font-size: 2.8em;
+  }
+
   #works-view .guarantee {
     width: 50%;
+    padding-right: 8em;
   }
 
   #works-view .features {
@@ -554,7 +638,7 @@ footer #footer-view .boilerplate li {
   #how-view {
     padding: 60px 0;
   }
-  
+
   gallery-view {
     padding: 15px 0;
   }
@@ -622,6 +706,10 @@ footer #footer-view .boilerplate li {
     padding: 15px 0;
   }
 
+  #press-view h1 {
+    font-size: 2.8em;
+  }
+
   #press-view .intro {
     display: flex;
     justify-content: space-between;
@@ -651,7 +739,7 @@ footer #footer-view .boilerplate li {
   #about-view li {
     padding: 0 30px;
     border-bottom: none;
-    border-right: 1px solid #CCC;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
 
