@@ -9,6 +9,10 @@
       $('#quotes-view .nav-btn.right-btn').click(function(evt){
         $('#quotes-view .slider').slick('slickNext');
       });
+
+      setInterval(function() {
+        $('#media-view .slider').slick('slickNext');
+      }, 2000);
     }
 
     $(document).ready(function() {
@@ -31,6 +35,7 @@
         infinite: true,
         slidesToShow: 5,
         centerMode: true,
+        speed: 2000,
         responsive: [
           {
             breakpoint: 768,
