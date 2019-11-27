@@ -2,17 +2,17 @@
     "use strict";
 
     function setupHandlers() {
-      $('.nav-btn.left-btn').click(function(evt){
-        $('.slider').slick('slickPrev');
+      $('#quotes-view .nav-btn.left-btn').click(function(evt){
+        $('#quotes-view .slider').slick('slickPrev');
       });
 
-      $('.nav-btn.right-btn').click(function(evt){
-        $('.slider').slick('slickNext');
+      $('#quotes-view .nav-btn.right-btn').click(function(evt){
+        $('#quotes-view .slider').slick('slickNext');
       });
     }
 
     $(document).ready(function() {
-      $('.slider').slick({
+      $('#quotes-view .slider').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -21,6 +21,28 @@
             breakpoint: 768,
             settings: {
               slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+
+      $('#media-view .slider').slick({
+        infinite: true,
+        slidesToShow: 5,
+        centerMode: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
               slidesToScroll: 1
             }
           }

@@ -473,7 +473,7 @@ footer #footer-view .boilerplate li {
 #quotes-view {
   position: relative;
   width: 100%;
-  padding: 15px;  
+  padding: 15px 0;
 }
 
 #quotes-view .nav-btn  {
@@ -510,7 +510,7 @@ footer #footer-view .boilerplate li {
   padding: 30px 15px;
 }
 
-#quotes-view li p {
+#quotes-view p {
   font-size: 1.15em;
 }
 
@@ -539,6 +539,20 @@ footer #footer-view .boilerplate li {
 #quotes-view .attrib h1 {
   font-size: 1.15em;
   font-weight: 600;
+}
+
+/* MEDIA */
+/******************************************/
+#media-view {
+}
+
+#media-view .slick-slide {
+  margin: 0 30px;
+  border: 1px solid rgba(26, 29, 36, 0.1);
+}
+
+#media-view .slick-slide img {
+  width: 100%;
 }
 
 /* ABOUT */
@@ -808,8 +822,14 @@ footer #footer-view .boilerplate li {
     font-size: 1.3em;
   }
 
-  #quotes-view {
-    padding: 15px 0;
+  #quotes-view p {
+    min-height: 300px;
+    font-size: 1.3em;
+  }
+
+  #quotes-view .attrib {
+    position: absolute;
+    bottom: 0;
   }
 
   #about-view {
@@ -829,6 +849,9 @@ footer #footer-view .boilerplate li {
 
 /* Small devices (tablets, 992px and up) */
 @media (min-width: 992px) {
+  #quotes-view p {
+    min-height: 240px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
