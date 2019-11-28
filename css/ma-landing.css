@@ -778,6 +778,38 @@ footer #footer-view .boilerplate li {
     padding: 0 15px 30px 15px;
   }
 
+  #works-view .features .icon {
+    margin-bottom: 22px;
+    width: 39px;
+    height: 39px;
+    background-repeat: no-repeat;
+    background-size: 39px 39px;
+  }
+
+  #works-view .features .icon.icon-design {
+    background-image: url("../images/icons/Design@2x.jpg");
+  }
+
+  #works-view .features .icon.icon-scan {
+    background-image: url("../images/icons/Scan@2x.jpg");
+  }
+
+  #works-view .features .icon.icon-custom {
+    background-image: url("../images/icons/Tailoring@2x.jpg");
+  }
+
+  #works-view .features .icon.icon-manufacture {
+    background-image: url("../images/icons/Manufacture@2x.jpg");
+  }
+
+  #works-view .features .icon.icon-market {
+    background-image: url("../images/icons/Market@2x.jpg");
+  }
+
+  #works-view .features .icon.icon-technology {
+    background-image: url("../images/icons/Technology@2x.jpg");
+  }
+  
   #how-view {
     background-size: 100% auto;
   }
