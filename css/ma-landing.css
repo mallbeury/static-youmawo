@@ -330,11 +330,10 @@ footer #footer-view .boilerplate li {
   display: flex;
   height: 100%;
   flex-direction: column;
-/*
-  flex-direction: column;
-  justify-content: space-between;
+}
 
- */
+#menu-overlay-view .menu-overlay-container .container {
+  width: 100%;
 }
 
 #menu-overlay-view .nav ul {
