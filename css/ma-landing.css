@@ -446,6 +446,7 @@ footer #footer-view .boilerplate li {
 
 #welcome-view .titles {
   position: absolute;
+  pointer-events: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -551,10 +552,10 @@ footer #footer-view .boilerplate li {
 
 #works-view .features .featureicon {
   margin-bottom: 22px;
-  width: 39px;
+  width: auto;
   height: 39px;
   background-repeat: no-repeat;
-  background-size: 39px 39px;
+  background-size: auto 39px;
 }
 
 #works-view .features .featureicon.featureicon-design {
@@ -704,15 +705,16 @@ footer #footer-view .boilerplate li {
 }
 
 #quotes-view .left-btn {
-  left: -20px;
+  left: 0;
 }
 
 #quotes-view .right-btn {
-  right: -20px;
+  right: 0;
 }
 
 #quotes-view .slider-view {
-  width: 100%;
+  width: 80%;
+  margin: 0 10%;
   overflow: hidden;
 }
 
@@ -1122,10 +1124,29 @@ footer #footer-view .boilerplate li {
   }
 
   #quotes-view p {
-    min-height: 240px;
+    min-height: 280px;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+  #quotes-view .slider-view {
+      width: 100%;
+      margin: 0;
+  }
+
+  #quotes-view p {
+    min-height: 220px;
+  }
+
+  #quotes-view .left-btn {
+    left: -90px;
+  }
+
+  #quotes-view .right-btn {
+    right: -90px;
+  }
 }
