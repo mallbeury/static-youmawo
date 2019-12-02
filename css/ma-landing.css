@@ -314,8 +314,8 @@ footer #footer-view .boilerplate li {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
+  height: 100%;
+  width: 100%;
   color: #FFF;
   background: #000;
   text-align: center;
@@ -341,7 +341,7 @@ footer #footer-view .boilerplate li {
 }
 
 #menu-overlay-view .nav li {
-  padding: 22px 0;
+  padding: 12px 0;
   font-size: 1.75em;
   line-height: 1em;
 }
