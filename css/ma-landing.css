@@ -316,6 +316,8 @@ footer #footer-view .boilerplate li {
   left: 0;
   height: 100%;
   width: 100%;
+  overflow: auto;
+  z-index:99;
   color: #FFF;
   background: #000;
   text-align: center;
@@ -328,11 +330,8 @@ footer #footer-view .boilerplate li {
   justify-content: space-between;
 }
 
-#menu-overlay-view .nav {
-  height: 100%;
-}
-
 #menu-overlay-view .nav ul {
+  padding: 40px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -344,6 +343,11 @@ footer #footer-view .boilerplate li {
   padding: 12px 0;
   font-size: 1.75em;
   line-height: 1em;
+}
+
+#menu-overlay-view .nav .maicon {
+  position: relative;
+  top: 4px;
 }
 
 #menu-overlay-view .nav-mini {

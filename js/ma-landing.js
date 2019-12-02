@@ -17,7 +17,7 @@
       $('#quotes-view .nav-btn.right-btn').click(function(evt){
         $('#quotes-view .slider').slick('slickNext');
       });
-      
+
       setInterval(function() {
         $('#media-view .slider').slick('slickNext');
       }, 2000);
