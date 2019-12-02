@@ -1,6 +1,42 @@
 html, body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+:focus {
+  outline: none;
+  outline-color: transparent;
+  outline-style: none;
+}
+
+input::placeholder {
+  color: #979BA0;
+  font-weight: bold;
+}
+input:-ms-input-placeholder {
+  color: #979BA0;
+  font-weight: bold;
+}
+input::-ms-input-placeholder {
+  color: #979BA0;
+  font-weight: bold;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2 {
@@ -114,6 +150,8 @@ header #header-view li.btn-nav {
 
 header #header-view .btn {
   padding: 22px 44px;
+  font-size: 1.15em;
+  line-height: 1em;
   background: #1f222b;
   color: #FFF;
 }
@@ -141,9 +179,14 @@ header #header-view .nav-mini .hamburger:before {
 header #header-view .nav-mini .hamburger:after {
   position: absolute;
   top: 100%;
+  left: 0;
   content: "";
   width: 24px;
   border-top: 2px solid #DFE6EE;
+}
+
+header #header-view .nav-mini .hamburger:hover {
+  cursor: pointer;
 }
 
 header #header-view .langs {
@@ -262,6 +305,89 @@ footer #footer-view .boilerplate ul {
 footer #footer-view .boilerplate li {
   padding: 0 15px;
   opacity: 0.92;
+}
+
+/* MENU OVERLAY */
+/******************************************/
+#menu-overlay-view {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #FFF;
+  background: #000;
+  text-align: center;
+}
+
+#menu-overlay-view .menu-overlay-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#menu-overlay-view .nav {
+  height: 100%;
+}
+
+#menu-overlay-view .nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#menu-overlay-view .nav li {
+  padding: 22px 0;
+  font-size: 1.75em;
+  line-height: 1em;
+}
+
+#menu-overlay-view .nav-mini {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#menu-overlay-view .nav-mini .hamburger {
+  position: relative;
+  top: 6px;
+  width: 24px;
+  height: 16px;
+  border-top: 2px solid #DFE6EE;
+}
+#menu-overlay-view .nav-mini .hamburger:before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -1px;
+  content: "";
+  width: 20px;
+  border-top: 2px solid #DFE6EE;
+}
+#menu-overlay-view .nav-mini .hamburger:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  content: "";
+  width: 24px;
+  border-top: 2px solid #DFE6EE;
+}
+
+#menu-overlay-view .nav-mini .hamburger:hover {
+  cursor: pointer;
+}
+
+#menu-overlay-view .btn {
+  width: 100%;
+  padding: 22px 44px;
+  font-size: 1.3em;
+  line-height: 1em;
+  background: #1f222b;
+  color: #FFF;
 }
 
 /* WELCOME */
@@ -386,7 +512,7 @@ footer #footer-view .boilerplate li {
   padding: 0 0 30px 0;
 }
 
-#works-view .features .icon {
+#works-view .features .featureicon {
   margin-bottom: 22px;
   width: 39px;
   height: 39px;
@@ -394,27 +520,27 @@ footer #footer-view .boilerplate li {
   background-size: 39px 39px;
 }
 
-#works-view .features .icon.icon-design {
+#works-view .features .featureicon.featureicon-design {
   background-image: url("../images/icons/Design@2x.jpg");
 }
 
-#works-view .features .icon.icon-scan {
+#works-view .features .featureicon.featureicon-scan {
   background-image: url("../images/icons/Scan@2x.jpg");
 }
 
-#works-view .features .icon.icon-custom {
+#works-view .features .featureicon.featureicon-custom {
   background-image: url("../images/icons/Tailoring@2x.jpg");
 }
 
-#works-view .features .icon.icon-manufacture {
+#works-view .features .featureicon.featureicon-manufacture {
   background-image: url("../images/icons/Manufacture@2x.jpg");
 }
 
-#works-view .features .icon.icon-market {
+#works-view .features .featureicon.featureicon-market {
   background-image: url("../images/icons/Market@2x.jpg");
 }
 
-#works-view .features .icon.icon-technology {
+#works-view .features .featureicon.featureicon-technology {
   background-image: url("../images/icons/Technology@2x.jpg");
 }
 
