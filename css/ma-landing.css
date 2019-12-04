@@ -86,7 +86,7 @@ a.more {
 }
 
 .text-hover {
-  padding: 0 0 10px 0;
+  padding: 10px 0 10px 0;
 }
 
 .text-hover-underline-goes-right:after {
