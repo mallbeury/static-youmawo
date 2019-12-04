@@ -80,6 +80,24 @@ a.more {
   color: #7ABBEB;
 }
 
+.text-hover {
+  padding: 0 0 10px 0;
+}
+
+.text-hover:focus, .text-hover:hover {
+  color: inherit;
+}
+
+.text-hover-underline-goes-left:after {
+  height: 2px;
+}
+
+text-hover:focus:after,
+.text-hover:hover:after,
+.text-hover:after {
+  background-color: #7ABBEB;
+}
+
 /* BOOTSTRAP */
 /******************************************/
 .form-control {
@@ -155,6 +173,13 @@ header #header-view li i {
   position: relative;
   top: 2px;
   padding-right: 8px;
+}
+
+header #header-view a,
+header #header-view a:link,
+header #header-view a:hover,
+header #header-view a:visited {
+  text-decoration: none;
 }
 
 header #header-view li.btn-nav {
