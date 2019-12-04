@@ -1,6 +1,8 @@
 html, body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  line-height: initial;
+  letter-spacing: initial;
   margin: 0;
   padding: 0;
   -webkit-appearance: none;
@@ -99,8 +101,16 @@ a.btn {
   color: #FFF;
 }
 
+.btn {
+  overflow: hidden;
+  color:rgba(0,0,0, 0) !important;
+  transition: all .3s ease;
+  text-shadow:0 0 0 #fff, 0 45px 0 #fff ;
+}
+
 .btn:hover {
   background: #6DB7ED;
+  text-shadow: 0 -45px 0 #fff, 0 0 0 #fff ;
 }
 
 /* HEADER */
@@ -450,7 +460,7 @@ footer #footer-view .boilerplate li {
 #welcome-view {
   position: relative;
   overflow: hidden;
-  background-color: #000000; 
+  background-color: #000000;
 }
 
 #welcome-view .content {
@@ -489,7 +499,12 @@ footer #footer-view .boilerplate li {
   padding: 30px 0;
 }
 
+#welcome-view .titles .cta {
+  pointer-events: auto;
+}
+
 #welcome-view .titles .link {
+  pointer-events: auto;
   padding-top: 40px;
 }
 
@@ -513,7 +528,7 @@ footer #footer-view .boilerplate li {
 
 #industry-view ul {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 
 #industry-view li {
@@ -543,7 +558,7 @@ footer #footer-view .boilerplate li {
 /******************************************/
 #works-view {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   margin: 100px 15px;
 }
 
@@ -561,7 +576,7 @@ footer #footer-view .boilerplate li {
 
 #works-view .features ul {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 
 #works-view .features li {
@@ -742,6 +757,10 @@ footer #footer-view .boilerplate li {
 
 #quotes-view .slick-slide {
   margin: 0 30px;
+}
+
+#quotes-view .slick-slide img {
+  min-height: auto;
 }
 
 #quotes-view .slick-arrow {
@@ -1154,8 +1173,8 @@ footer #footer-view .boilerplate li {
 
 @media (min-width: 1400px) {
   #quotes-view .slider-view {
-      width: 100%;
-      margin: 0;
+    width: 100%;
+    margin: 0;
   }
 
   #quotes-view p {
