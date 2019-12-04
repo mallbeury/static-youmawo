@@ -88,8 +88,14 @@ a.more {
   color: inherit;
 }
 
-.text-hover-underline-goes-left:after {
+.text-hover-underline-goes-right:after {
   height: 2px;
+}
+
+.text-hover:after,
+.text-hover:hover:after {
+  -webkit-transition-duration: .25s;
+  transition-duration: .25s;
 }
 
 text-hover:focus:after,
