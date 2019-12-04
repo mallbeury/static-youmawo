@@ -27,6 +27,10 @@ input::-ms-input-placeholder {
   font-weight: bold;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+}
+
 ul, ol {
   margin: 0;
   padding: 0;
@@ -72,6 +76,7 @@ a,
 a:link,
 a:hover,
 a:visited {
+  text-decoration: none;
   color: inherit;
 }
 
@@ -82,10 +87,6 @@ a.more {
 
 .text-hover {
   padding: 0 0 10px 0;
-}
-
-.text-hover:focus, .text-hover:hover {
-  color: inherit;
 }
 
 .text-hover-underline-goes-right:after {
