@@ -104,13 +104,17 @@ a.btn {
 .btn {
   overflow: hidden;
   color:rgba(0,0,0, 0) !important;
-  transition: all .3s ease;
-  text-shadow:0 0 0 #fff, 0 45px 0 #fff ;
+  transition: all .5s ease;
+  text-shadow:0 0 0 #fff, 0 45px 0 #fff;
+}
+
+.btn.btn-default {
+  background: #1f222b;
 }
 
 .btn:hover {
   background: #6DB7ED;
-  text-shadow: 0 -45px 0 #fff, 0 0 0 #fff ;
+  text-shadow: 0 -45px 0 #fff, 0 0 0 #fff;
 }
 
 /* HEADER */
@@ -162,8 +166,6 @@ header #header-view .btn {
   padding: 22px 44px;
   font-size: 1.15em;
   line-height: 1em;
-  background: #1f222b;
-  color: #FFF;
 }
 
 header #header-view .nav-mini {
@@ -447,8 +449,6 @@ footer #footer-view .boilerplate li {
   padding: 22px 44px;
   font-size: 1.3em;
   line-height: 1em;
-  background: #1f222b;
-  color: #FFF;
 }
 
 #menu-overlay-view .footer {
