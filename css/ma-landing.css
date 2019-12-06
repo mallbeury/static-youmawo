@@ -155,12 +155,16 @@ header #header-view {
 }
 
 header #header-view .logo {
-  width: 172px;
-  padding: 15px 0 0 15px;
+  padding: 20px 0 0 15px;
 }
 
-header #header-view .logo img {
-  width: 100%;
+header #header-view .logo .image {
+  display: block;
+  background-image: url("../images/youmawo_light.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 172px;
+  height: 32px;
 }
 
 header #header-view .nav {
@@ -269,11 +273,15 @@ footer #footer-view {
 }
 
 footer #footer-view .logo {
-  width: 192px;
 }
 
-footer #footer-view .logo img {
-  width: 100%;
+footer #footer-view .logo .image {
+  display: block;
+  background-image: url("../images/youmawo_light.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 192px;
+  height: 36px;
 }
 
 footer #footer-view .newsletter {
@@ -402,12 +410,16 @@ footer #footer-view .boilerplate li {
 }
 
 #menu-overlay-view .header-view .logo {
-  width: 172px;
-  padding: 15px 0 0 15px;
+  padding: 20px 0 0 15px;
 }
 
-#menu-overlay-view .header-view .logo img {
-  width: 100%;
+#menu-overlay-view .header-view .logo .image {
+  display: block;
+  background-image: url("../images/youmawo_light.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 172px;
+  height: 32px;
 }
 
 #menu-overlay-view .header-view .nav-mini {
@@ -1191,7 +1203,11 @@ footer #footer-view .boilerplate li {
 @media (min-width: 992px) {
   header #header-view .logo {
     padding-left: 0;
-    width: auto;
+  }
+
+  header #header-view .logo .image {
+    width: 192px;
+    height: 36px;
   }
 
   #quotes-view p {
