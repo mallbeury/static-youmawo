@@ -1055,6 +1055,7 @@ footer #footer-view .boilerplate li {
 
   #works-view .features {
     width: 50%;
+    overflow-x: hidden;
   }
 
   #works-view .features ul {
