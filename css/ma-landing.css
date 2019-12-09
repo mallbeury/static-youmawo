@@ -710,6 +710,10 @@ footer #footer-view .boilerplate li {
   color: #7ABBEB;
 }
 
+#how-view .play:hover {
+  cursor: pointer;
+}
+
 /* GALLERY */
 /******************************************/
 #gallery-view {
