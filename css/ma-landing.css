@@ -627,6 +627,13 @@ footer #footer-view .boilerplate li {
   padding: 0 0 30px 0;
 }
 
+#works-view .features .maicon {
+  margin-bottom: 22px;
+  font-size: 39px;
+  height: 39px;
+
+}
+
 #works-view .features .featureicon {
   margin-bottom: 22px;
   width: auto;

@@ -62,3 +62,24 @@
 .maicon-twitter:before {
   content: "\68";
 }
+.maicon-vimeo:before {
+  content: "\69";
+}
+.maicon-design:before {
+  content: "\6a";
+}
+.maicon-manufacture:before {
+  content: "\6b";
+}
+.maicon-market:before {
+  content: "\6c";
+}
+.maicon-scan:before {
+  content: "\6d";
+}
+.maicon-tailored:before {
+  content: "\6e";
+}
+.maicon-technology:before {
+  content: "\6f";
+}
