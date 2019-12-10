@@ -566,7 +566,6 @@ footer #footer-view .boilerplate li {
 }
 
 #industry-view .logos {
-  opacity: 0.2;
   padding: 20px 0;
 }
 
@@ -586,7 +585,7 @@ footer #footer-view .boilerplate li {
 #collections-view {
   padding: 150px 15px 200px 15px;
   text-align: center;
-  background-image: url("../images/Glasses_FullWidth.jpg");
+  background-image: url("../images/Glasses_FW.jpg");
   background-repeat: no-repeat;
   background-size: auto 246px;
   background-position: center bottom;
@@ -631,39 +630,6 @@ footer #footer-view .boilerplate li {
   margin-bottom: 22px;
   font-size: 39px;
   height: 39px;
-
-}
-
-#works-view .features .featureicon {
-  margin-bottom: 22px;
-  width: auto;
-  height: 39px;
-  background-repeat: no-repeat;
-  background-size: auto 39px;
-}
-
-#works-view .features .featureicon.featureicon-design {
-  background-image: url("../images/icons/Design@2x.jpg");
-}
-
-#works-view .features .featureicon.featureicon-scan {
-  background-image: url("../images/icons/Scan@2x.jpg");
-}
-
-#works-view .features .featureicon.featureicon-custom {
-  background-image: url("../images/icons/Tailoring@2x.jpg");
-}
-
-#works-view .features .featureicon.featureicon-manufacture {
-  background-image: url("../images/icons/Manufacture@2x.jpg");
-}
-
-#works-view .features .featureicon.featureicon-market {
-  background-image: url("../images/icons/Market@2x.jpg");
-}
-
-#works-view .features .featureicon.featureicon-technology {
-  background-image: url("../images/icons/Technology@2x.jpg");
 }
 
 #works-view li h1 {
@@ -889,6 +855,7 @@ footer #footer-view .boilerplate li {
 
 #media-view .slick-slide img {
   width: 100%;
+  border: 1px solid rgb(26, 29, 36, 0.1);
 }
 
 #media-view .slick-arrow {
