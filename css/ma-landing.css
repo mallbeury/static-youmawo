@@ -147,6 +147,7 @@ a.btn {
 header {
   background: #000;
   color: #FFF;
+  margin-bottom: 0;
 }
 
 header #header-view {
@@ -165,9 +166,6 @@ header #header-view .logo .image {
   background-size: 100% auto;
   width: 172px;
   height: 32px;
-}
-
-header #header-view .nav {
 }
 
 header #header-view ul {
@@ -583,12 +581,20 @@ footer #footer-view .boilerplate li {
 /* COLLECTIONS */
 /******************************************/
 #collections-view {
-  padding: 150px 15px 200px 15px;
+  padding: 150px 15px 250px 15px;
   text-align: center;
   background-image: url("../images/Glasses_FW.jpg");
   background-repeat: no-repeat;
   background-size: auto 246px;
   background-position: center bottom;
+}
+
+#collections-view .image {
+  display: none;
+}
+
+#collections-view .image img {
+  width: 100%;
 }
 
 #collections-view h1 {
@@ -1019,8 +1025,16 @@ footer #footer-view .boilerplate li {
   }
 
   #collections-view {
+    padding: 200px 15px 0 15px;
+/*
     padding: 200px 15px 320px 15px;
     background-size: auto 420px;
+ */
+    background: none;
+  }
+
+  #collections-view .image {
+    display: block;
   }
 
   #collections-view h1 {
