@@ -1157,6 +1157,24 @@ footer #footer-view .boilerplate li {
 
 /* Small devices (tablets, 992px and up) */
 @media (min-width: 992px) {
+  #industry-view {
+    display: flex;
+  }
+
+  #industry-view ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 -30px;
+  }
+
+  #industry-view li {
+    width: auto;
+    padding: 0 30px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
   header {
     position: fixed;
     top: 0;
@@ -1177,25 +1195,6 @@ footer #footer-view .boilerplate li {
   .main {
     margin-top: 95px;
   }
-
-  #industry-view {
-    display: flex;
-  }
-
-  #industry-view ul {
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 0 -30px;
-  }
-
-  #industry-view li {
-    width: auto;
-    padding: 0 30px;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
 }
 
 @media (min-width: 1400px) {
