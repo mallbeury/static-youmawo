@@ -573,6 +573,10 @@ footer #footer-view .boilerplate li {
   text-align: center;
 }
 
+#industry-view li img {
+  height: 48px;
+}
+
 /* COLLECTIONS */
 /******************************************/
 #collections-view {
