@@ -580,16 +580,8 @@ footer #footer-view .boilerplate li {
 /* COLLECTIONS */
 /******************************************/
 #collections-view {
-  padding: 150px 15px 250px 15px;
+  padding: 150px 15px 0 15px;
   text-align: center;
-  background-image: url("../images/Glasses_FW.jpg");
-  background-repeat: no-repeat;
-  background-size: auto 246px;
-  background-position: center bottom;
-}
-
-#collections-view .image {
-  display: none;
 }
 
 #collections-view .image img {
@@ -994,13 +986,8 @@ footer #footer-view .boilerplate li {
 
   #collections-view {
     padding: 200px 15px 0 15px;
-    background: none;
   }
-
-  #collections-view .image {
-    display: block;
-  }
-
+  
   #collections-view h1 {
     font-size: 4em;
   }
