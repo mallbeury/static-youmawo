@@ -987,7 +987,7 @@ footer #footer-view .boilerplate li {
   #collections-view {
     padding: 200px 15px 0 15px;
   }
-  
+
   #collections-view h1 {
     font-size: 4em;
   }
@@ -1154,7 +1154,7 @@ footer #footer-view .boilerplate li {
 
   #industry-view ul {
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
     margin: 0 -30px;
   }
 
